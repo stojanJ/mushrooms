@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Galvin;
+  src: url(/public/assets/fonts/Galvin-Bold.ttf);
+}
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -24,4 +28,19 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+scroll-snap-type: y mandatory;
+scroll-padding-top: 50px;
+}
+nav {
+  font-family: Galvin;
+  font-size: larger;
+  font-style: normal;
+}
+.image_hero {
+  position: relative;
+  bottom: -550px;
+  left: 700px;
+}
+section{
+  scroll-snap-align: start;
 }
